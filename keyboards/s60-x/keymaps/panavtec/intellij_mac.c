@@ -36,7 +36,6 @@ void replace_key(keyrecord_t *record, uint8_t mod, uint8_t key, uint8_t replace)
 }
 
 void process_intellij_binding(keyrecord_t *record, uint8_t id, uint8_t opt) {
-    dprint("function processing");
     switch(id) { 
         case INTELLIJ_E  : replace_mod(record, KC_E, ctl_pressed_mask(), MOD_BIT(KC_LGUI)); break;
         case INTELLIJ_1  : replace_mod(record, KC_1, alt_pressed_mask(), MOD_BIT(KC_LGUI)); break;
